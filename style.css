@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background-color: #f6f5f5;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.interface {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+h2.titulo {
+    font-size: 30px;
+    color: #D000FF;
+}
+
+p.subtitulo {
+    margin-bottom: 20px;
+}
+
+/* HEADER */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #D000FF;
+    text-decoration: none;
+    transition: .2s;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+}
+
+header a:hover {
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.btn-comecar a button {
+    padding: 10px 40px;
+    background-color: #D000FF;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+    border: 2px solid #f6f5f5;
+}
+
+.btn-comecar a button:hover {
+    box-shadow: 0px 0px 8px #0000004d;
+    transform: scale(1.05);
+    border: 2px solid #f6f5f53b;
+}
+
+/* MAIN */
+
+section.topo-site {
+    padding: 10px 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+section.topo-site .interface {
+    background-color: #D000FF;
+    padding: 30px 4%;
+    border-radius: 30px;
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.topo-site p {
+    margin: 20px 0px;
+    color: #fff;
+}
+
+section.topo-site .img-toposite img {
+    position: relative;
+    animation: mexer 2s ease-in-out infinite alternate;
+}
+
+@keyframes mexer {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 15px;
+    }
+}
+
+/* CURSOS */
+
+section.cursos {
+    padding: 40px 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+section.cursos .flex {
+    gap: 70px;
+}
+
+div.curso-box {
+    text-align: center;
+    color: #D000FF;
+    padding: 40px;
+    border: 2px solid #d000ff73;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+div.curso-box:hover {
+    background-color: #D000FF;
+    border: 2px solid #d000ff40;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+div.curso-box p {
+    margin: 10px 0px;
+}
+
+div.curso-box i {
+    font-size: 50px;
+}
+
+/* CONTATOS */
+
+section.contatos {
+    padding: 20px 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+section.contatos .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #D000FF;
+    padding: 10px 4%;
+    border-radius: 30px;
+}
+
+section.contatos .txt-contatos {
+    margin-right: 30%;
+    margin-bottom: 0%;
+    font-size: 24px;
+    color: #fff;
+}
+
+section.contatos .txt-contatos .links a button {
+    padding: 30px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #D000FF;
+    color: #fff;
+    margin-right: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+section.contatos .txt-contatos .links a button i {
+    font-size: 24px;
+}
+
+section.contatos .txt-contatos .links a button:hover {
+    background-color: #ffffff;
+    color: #D000FF;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 20px 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+footer .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+footer .txt-footer {
+    color: #D000FF;
+}
+
+footer .txt-footer a {
+    color: #ba00e4;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/* MODAL */
+
+dialog.dialogcss {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 4%;
+    padding: 15px 2%;
+    border: none;
+    border-radius: 20px;
+}
+
+dialog.dialoghtml {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    padding: 15px 2%;
+    border: none;
+    border-radius: 20px;
+}
+
+dialog.dialogjs {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    padding: 15px 2%;
+    border: none;
+    border-radius: 20px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.551);
+}
+
+dialog button {
+    margin-top: 20px;
+    margin-right: 05px;
+    padding: 10px;
+    outline: none;
+    background-color: #D000FF;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+dialog button:hover {
+    transform: scale(1.05);
+    border: 2px solid #ffffff47;
+}
+
+dialog h2 {
+    color: #ba00e4;
+}
+
+dialog h3 {
+    color: #ba00e4;
+    margin-bottom: 3px;
+}
+
+dialog p {
+    font-weight: 500;
+}
+
+dialog span {
+    font-weight: 660;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1020px) {
+    section.topo-site .interface {
+        padding: 20px 1%;
+    }
+
+    section.topo-site h1 {
+        font-size: 40px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    header nav ul li {
+        padding: 0px 20px;
+    }
+
+    .interface {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .img-toposite img {
+        width: 100%;
+    }
+
+    section.topo-site .flex {
+        gap: 60px;
+    }
+
+    .img-contatos img {
+        width: 100%;
+    }
+
+    section.contatos .flex {
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    section.contatos .txt-contatos .links a button {
+        margin-right: 20px;
+        padding: 16px;
+        margin: 10px 0px;
+    }
+
+    section.contatos {
+        padding: 30px 1%;
+    }
+
+    dialog.dialoghtml {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    dialog.dialogcss {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    dialog.dialogjs {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+
+    footer .flex {
+        gap: 20%;
+        text-align: center;
+    }
+
+    header > .interface {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header nav ul li {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.topo-site .interface {
+        padding: 20px 6%;
+    }
+
+    .img-toposite img {
+        width: 100%;
+    }
+
+    section.topo-site .flex {
+        gap: 60px;
+    }
+
+    section.topo-site h1 {
+        font-size: 30px;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        padding: 0px 0px;
+    }
+
+    .flex {
+        gap: 10px;
+    }
+
+    .interface {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .img-toposite img {
+        width: 100%;
+    }
+
+    section.topo-site .flex {
+        gap: 60px;
+    }
+
+    .img-contatos img {
+        width: 100%;
+    }
+
+    section.contatos .flex {
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    section.contatos .txt-contatos .links a button {
+        margin-right: 20px;
+        padding: 16px;
+        margin: 10px 0px;
+    }
+
+    section.contatos {
+        padding: 30px 1%;
+    }
+
+    dialog.dialoghtml {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    dialog.dialogcss {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    dialog.dialogjs {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+
+    footer .flex {
+        gap: 20%;
+        text-align: center;
+    }
+
+    header > .interface {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header nav ul li {
+        padding: 0px 10px;
+    }
+}
